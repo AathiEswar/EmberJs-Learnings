@@ -1,9 +1,2 @@
 {{page-title "Rental"}}
-<div class="jumbo">
-  <div class="right tomster"></div>
-  <h2>Welcome!</h2>
-  <p>We hope you find exactly what you're looking for in a place to stay.</p>
-  <LinkTo @route="contact" class="button">
-    About Us
-  </LinkTo>
-</div>
+<Rental::Detailed @rental={{@model}} />
