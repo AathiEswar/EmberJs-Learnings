@@ -6,9 +6,17 @@
 </Jumbo>
 
 <div class="rentals">
+  <form>
+    <label for="search">
+      <span>Where would you like to stay?</span>
+      <input id="search" class="light">
+    </label>
+  </form>
   <ul class="results">
-  {{#each @model as |rental|}}
-      <li><Rental @rental={{rental}} /></li>
+    {{#each @model as |rental|}}
+    <li>
+      <Rental @rental={{rental}} />
+    </li>
     {{/each}}
   </ul>
 </div>
