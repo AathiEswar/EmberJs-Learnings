@@ -1,4 +1,4 @@
-<Chat::Avatar @title={{@avatarTitle}} @initial={{@avatarInitial}} @isActive={{@userIsActive}}
+<Chat::Avatar @title={{titleHelper @username}} @initial={{this.substring @username start=0 end=1}} @isActive={{@userIsActive}}
     class="{{if @isCurrentUser " current-user"}}" />
 <section>
     <Chat::Username @name={{@username}} @localTime={{@userLocalTime}} />

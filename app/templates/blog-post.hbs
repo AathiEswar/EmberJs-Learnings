@@ -1,2 +1,12 @@
 {{page-title "BlogPost"}}
-{{outlet}}
+<BlogPost::Body @post={{@model}}>
+    <:author>
+        Aathi Eswar
+    </:author>
+    <:title>
+        Title
+    </:title>
+    <:default>
+        <img src="/assets/images/teaching-tomster.png" alt="ember guy" />
+    </:default>
+</BlogPost::Body>
